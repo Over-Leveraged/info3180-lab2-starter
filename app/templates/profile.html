@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class = "profile">
+    <div class = "profile-header">
+        <div class = "profile-header-avatar">
+            
+        </div>
+        <div class = "profile-header-info">
+            <img src = "{{ url_for('static', filename = 'profile_photo.png') }}" alt = "Akiel Walsh" class = "image">
+            <h1 class = "name"> Akiel Walsh </h1>
+            <p class = "username"> @kwalsh </p>
+            <p class = "location"> Kingston, Jamaica </p>
+            <p class = "date-joined"> Joined {{join_date}} </p>
+
+        </div>
+    </div>
+
+    <div class = "description"> 
+        <p class = "summary"> I am a software developer from Kingston, Jamaica. I am currently working as a software developer at a startup in Kingston. I am also a student at the University of the West Indies, Mona. I am currently pursuing a degree in Computer Science. </p>    
+    </div>
+
+    <div class = "profile-stats-container">
+        <ul class = "profile-stats">
+            <li class = "profile-stats-posts">
+                <a href = "#">
+                    <span class = "stat-count"> 10 </span>
+                    <span class = "stat-name"> posts </span>
+                </a>
+            </li>
+            <li class = "profile-stats-followers">
+                <a href = "#">
+                    <span class = "stat-count"> 10 </span>
+                    <span class = "stat-name"> followers </span>
+                </a>
+            </li>
+            <li class = "profile-stats-following">
+                <a href = "#">
+                    <span class = "stat-count"> 10 </span>
+                    <span class = "stat-name"> following </span>
+                </a>
+            </li>
+        </ul>
+        <button class = "follow-btn"> Follow </button>
+    </div>         
+</div>
+
+{% endblock %}
